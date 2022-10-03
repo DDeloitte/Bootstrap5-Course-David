@@ -66,7 +66,7 @@
                         <a class="nav-link active" href="employee_list.html">Employees</a>
                     </li>
 
-                    <!-- Jobs Link -->
+                    <!-- Items Link -->
                     <li class="nav-item">
                         <a class="nav-link active" href="item_list.html">Items</a>
                     </li>
@@ -101,7 +101,7 @@
     </nav>
     <!-- Nav -->
 
-    <!-- Employee Data -->
+    <!-- Item Data -->
     <div class="container">
         <div class="row justify-content-center">
 
@@ -109,37 +109,37 @@
 
                 <!-- Employee container -->
                 <div class="list-group shadow-sm small mb-3 ">
-                    <div class="list-group-item active bg-dark">Employees Data</div>
+                    <div class="list-group-item active bg-dark">Items Inventory</div>
                     <a 
                         href="#" 
                         class="list-group-item list-group-item-action bg-light"
                         data-bs-toggle="modal"
-                        data-bs-target="#add_employee">
-                        Add Employee 
+                        data-bs-target="#add_item">
+                        Add Item 
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action bg-light">View Employees</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">View Items</a>
                 </div>
 
                 <!-- Related links container -->
                 <div class="list-group shadow-sm small mb-3 ">
                     <div class="list-group-item active bg-dark">Related Links</div>
-                    <a href="item_list.html" class="list-group-item list-group-item-action bg-light">Items List</a>
+                    <a href="employee_list.html" class="list-group-item list-group-item-action bg-light">Employees List</a>
                 </div>
             </div>
 
             <!-- Employee Data -->
             <div class="col-md-8">
                 <div class="card shadow-sm border-0 mb-3">
-                    <div class="card-header text-bg-dark text-center">Employees List</div>
+                    <div class="card-header text-bg-dark text-center">Items Inventory</div>
                     <table class="table table-sm small table-bordered align-middle mb-0">
 
                         <!-- Table Header -->
                         <tr>
                             <th>ID</th>
-                            <th>Employee ID</th>
+                            <th>Item ID</th>
                             <th>Name</th>
-                            <th>Type</th>
-                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Quantity</th>
                             <th>Details</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -149,17 +149,287 @@
 
                         <tr>
                             <td>1</td>
+                            <td>1001</td>
+                            <td>CPU</td>
+                            <td>IT</td>
+                            <td>3</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-secondary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_detail">Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>1002</td>
+                            <td>GPU</td>
+                            <td>IT</td>
+                            <td>5</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-secondary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_detail">Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>1003</td>
+                            <td>Phone</td>
+                            <td>Sales</td>
+                            <td>11</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-secondary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_detail">Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>1004</td>
+                            <td>Contact List</td>
+                            <td>Sales</td>
+                            <td>5</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-secondary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_detail">Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>1005</td>
+                            <td>Stappler</td>
+                            <td>HR</td>
+                            <td>5</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-secondary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_detail">Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>1006</td>
+                            <td>Employees List</td>
+                            <td>HR</td>
+                            <td>2</td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-secondary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_detail">Details</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-primary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-grid">
+                                    <a 
+                                        href="#"
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#item_delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>1007</td>
+                            <td>CNC</td>
+                            <td>Production</td>
                             <td>1</td>
-                            <td>David</td>
-                            <td>0</td>
-                            <td>email1@email.com</td>
                             <td>
                                 <div class="d-grid">
                                     <a 
                                         href="#"
                                         class="btn btn-sm btn-secondary"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#employee_detail">Details</a>
+                                        data-bs-target="#item_detail">Details</a>
                                 </div>
                             </td>
                             <td>
@@ -168,7 +438,7 @@
                                         href="#"
                                         class="btn btn-sm btn-primary"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#employee_edit">
+                                        data-bs-target="#item_edit">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -182,7 +452,7 @@
                                         href="#"
                                         class="btn btn-sm btn-danger"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#employee_delete">
+                                        data-bs-target="#item_delete">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
@@ -193,18 +463,18 @@
                         </tr>
 
                         <tr>
+                            <td>8</td>
+                            <td>1008</td>
+                            <td>3D Printer</td>
+                            <td>Production</td>
                             <td>2</td>
-                            <td>2</td>
-                            <td>Guillermo</td>
-                            <td>2</td>
-                            <td>email2@email.com</td>
                             <td>
                                 <div class="d-grid">
                                     <a 
                                         href="#"
                                         class="btn btn-sm btn-secondary"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#employee_detail">Details</a>
+                                        data-bs-target="#item_detail">Details</a>
                                 </div>
                             </td>
                             <td>
@@ -213,7 +483,7 @@
                                         href="#"
                                         class="btn btn-sm btn-primary"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#employee_edit">
+                                        data-bs-target="#item_edit">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -227,97 +497,7 @@
                                         href="#"
                                         class="btn btn-sm btn-danger"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#employee_delete">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>3</td>
-                            <td>3</td>
-                            <td>Daniel</td>
-                            <td>2</td>
-                            <td>email3@email.com</td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                        href="#"
-                                        class="btn btn-sm btn-secondary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#employee_detail">Details</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                        href="#"
-                                        class="btn btn-sm btn-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#employee_edit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                        href="#"
-                                        class="btn btn-sm btn-danger"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#employee_delete">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>Oscar</td>
-                            <td>2</td>
-                            <td>email4@email.com</td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                        href="#"
-                                        class="btn btn-sm btn-secondary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#employee_detail">Details</a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                        href="#"
-                                        class="btn btn-sm btn-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#employee_edit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-grid">
-                                    <a 
-                                        href="#"
-                                        class="btn btn-sm btn-danger"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#employee_delete">
+                                        data-bs-target="#item_delete">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
@@ -332,12 +512,12 @@
             </div>
         </div>
     </div>
-    <!-- Employee Data -->
+    <!-- Item Data -->
 
-    <!-- Add Employee Data -->
+    <!-- Add Item Data -->
     <div 
         class="modal fade"
-        id="add_employee"
+        id="add_item"
         data-bs-backdrop="static"
         tabindex="-1"
         aria-hidden="true"
@@ -345,7 +525,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-bg-dark">
-                    <h5 class="model-title">Add Employee Details</h5>
+                    <h5 class="model-title">Add Item Details</h5>
                     <button 
                         type="button" 
                         class="btn-close btn-close-white"
@@ -354,55 +534,56 @@
                     </button>
                 </div>
 
-                <!-- Adding data format -->
+                <!-- Adding item format -->
                 <div class="modal-body">
                     <form>
                         <div class="container">
                             <div class="row gx-3">
 
-                                <!-- Beginning of the add data form -->
+                                <!-- Beginning of the add item form -->
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <input type="date" class="form-control form-control-sm" required>
                                     </div>
                                 </div>
 
-                                <!-- First name prompt -->
+                                <!-- Item name prompt -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control form-control-sm" placeholder="First Name" required>
+                                        <input type="text" class="form-control form-control-sm" placeholder="Item Name" required>
                                     </div>
                                 </div>
 
-                                <!-- Last name prompt -->
+                                <!-- Item Description prompt -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control form-control-sm" placeholder="Last Name" required>
+                                        <input type="text" class="form-control form-control-sm" placeholder="Description" required>
                                     </div>
                                 </div>
 
-                                <!-- Email prompt -->
+                                <!-- Item Quantity prompt -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <input type="email" class="form-control form-control-sm" placeholder="Email ID" required>
+                                        <input type="email" class="form-control form-control-sm" placeholder="Quantity" required>
                                     </div>
                                 </div>
 
-                                <!-- Phone prompt -->
+                                <!-- Item User ID prompt -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <input type="tel" class="form-control form-control-sm" placeholder="Phone" required>
+                                        <input type="tel" class="form-control form-control-sm" placeholder="User ID" required>
                                     </div>
                                 </div>
 
-                                <!-- Select Type of user -->
+                                <!-- Select department -->
                                 <div class="col-md-8">
                                     <div class="mb-3">
-                                        <select class="form-select form-select-sm" aria-label="Job Assigned">
-                                            <option selected>Select a Job for the employee</option>
-                                            <option value="User">User</option>
-                                            <option value="Administrator">Administrator</option>
-                                            <option value="SystemAdmin">SystemAdmin</option>
+                                        <select class="form-select form-select-sm" aria-label="Department">
+                                            <option selected>Select a department for the item</option>
+                                            <option value="IT">IT</option>
+                                            <option value="Sales">Sales</option>
+                                            <option value="HR">HR</option>
+                                            <option value="Production">Production</option>
                                         </select>
                                     </div>
                                 </div>
@@ -438,12 +619,12 @@
             </div>
         </div>
     </div>
-    <!-- Add Employee Data -->
+    <!-- Add Item Data -->
 
-    <!-- Details Employee -->
+    <!-- Details Item -->
     <div 
         class="modal fade"
-        id="employee_detail"
+        id="item_detail"
         data-bs-backdrop="static"
         tabindex="-1"
         aria-hidden="true"
@@ -451,7 +632,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-bg-dark">
-                    <h5 class="model-title">Employee Details</h5>
+                    <h5 class="model-title">Item Details</h5>
                     <button 
                         type="button" 
                         class="btn-close btn-close-white"
@@ -460,7 +641,7 @@
                     </button>
                 </div>
 
-                <!-- Consulting data table -->
+                <!-- Consulting item table -->
                 <div class="modal-body p-0">
                     <table class="table table-bordered small mb-0">
 
@@ -470,33 +651,33 @@
                         </tr>
 
                         <tr>
-                            <th>Employee ID</th>
-                            <td>741</td>
+                            <th>Item ID</th>
+                            <td>1001</td>
                         </tr>
 
                         <tr>
-                            <th>First Name</th>
-                            <td>Auflauf</td>
+                            <th>Item Name</th>
+                            <td>CPU</td>
                         </tr>
 
                         <tr>
-                            <th>Last Name</th>
-                            <td>Auflauf</td>
+                            <th>Description</th>
+                            <td>CPU Data</td>
                         </tr>
 
                         <tr>
-                            <th>Type</th>
-                            <td>0</td>
+                            <th>Department</th>
+                            <td>IT</td>
                         </tr>
 
                         <tr>
-                            <th>Email</th>
-                            <td>email@email.com</td>
+                            <th>Quantity</th>
+                            <td>3</td>
                         </tr>
 
                         <tr>
-                            <th>Phone</th>
-                            <td>458574565</td>
+                            <th>User ID</th>
+                            <td>3</td>
                         </tr>
 
                         <tr>
@@ -512,7 +693,7 @@
                         href="#" 
                         class="btn btn-sm btn-primary"
                         data-bs-toggle="modal"
-                        data-bs-target="#employee_edit">
+                        data-bs-target="#item_edit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -537,12 +718,12 @@
             </div>
         </div>
     </div>
-    <!-- Details Employee -->
+    <!-- Details Item -->
 
-    <!-- Edit Employee -->
+    <!-- Edit Item -->
     <div 
         class="modal fade"
-        id="employee_edit"
+        id="item_edit"
         data-bs-backdrop="static"
         tabindex="-1"
         aria-hidden="true"
@@ -550,7 +731,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header text-bg-dark">
-                    <h5 class="model-title">Edit Employee Details</h5>
+                    <h5 class="model-title">Edit Item Details</h5>
                     <button 
                         type="button" 
                         class="btn-close btn-close-white"
@@ -643,9 +824,9 @@
             </div>
         </div>
     </div>
-    <!-- Edit Employee -->
+    <!-- Edit Item -->
 
-    <!-- Delete Employee -->
+    <!-- Delete Item -->
     <div 
         class="modal fade"
         id="employee_delete"
@@ -689,7 +870,7 @@
             </div>
         </div>
     </div>
-    <!-- Delete Employee -->
+    <!-- Delete Item -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>	
