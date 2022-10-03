@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dash</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <style>
+        .brand-gradient
+        {
+            background: #CF3030;
+            background: linear-gradient(to top, #CF3030 0%, #0030CF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .vr
+        {
+            color: white;
+        }
+    </style>
+
+  </head>
+
+  <body bg-light>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow small mb-3">
+        <div class="container-fluid">
+            <a href="dash.html" class="navbar-brand">
+                <span class="brand-gradient">EMS2.0</span>
+            </a>
+
+            <!-- Button -->
+            <button 
+
+            class="navbar-toggler border-0" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbar-supported-content" 
+            aria-controls="navbar-supported-content" 
+            aria-expanded="false" 
+            aria-label="Toggle Navigation">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+
+            </button>
+
+            <!-- Header -->
+            <div class="collapse navbar-collapse" id="navbar-supported-content">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Home Link -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="dash.html">Home</a>
+                    </li>
+
+                    <!-- Employees Link -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="employee_list.html">Employees</a>
+                    </li>
+
+                    <!-- Jobs Link -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Items</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+
+                    <!-- Search button -->
+                    <div class="hstack gap-3 me-3">
+                        <input class="form-control form-control-sm me-auto" type="search" placeholder="Search for..." aria-label="Search for...">
+                        <button type="submit" class="btn btn.sm btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </div> 
+
+                    <!-- Logout button -->
+                    <div class="vr" ></div>
+                    <a href="index.html" class="btn btn-sm btn-primary ms-3" id="logout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                    </a>
+
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Nav -->
+
+    <!-- Cards -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+
+            <!-- Employees List -->
+            <div class="col-md-3">
+                <div class="card text-bg-dark shadow text-center">
+                    <div class="card-header">Employees List</div>
+                    <div class="card-body">
+                        <span class="fs-1">254+</span>
+                    </div>
+                    <a href="employee_list.html" class="card-footer small text-white">View employes</a>
+                </div>
+            </div>
+
+            <!-- Items List -->
+            <div class="col-md-3">
+                <div class="card text-bg-dark shadow text-center">
+                    <div class="card-header">Items List</div>
+                    <div class="card-body">
+                        <span class="fs-1">12+</span>
+                    </div>
+                    <a href="#" class="card-footer small text-white">View items</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Cards -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>	
+
+  </body>
+
+</html>
